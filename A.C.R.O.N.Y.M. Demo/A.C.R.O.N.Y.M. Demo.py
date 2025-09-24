@@ -142,4 +142,6 @@ for i, w in enumerate(words):
 
 #Clears the terminal of all text
 time.sleep(0.1)
-os.system('cls' if os.name == 'nt' else 'clear')
+
+if os.name == "nt":
+    os.system("cls")
